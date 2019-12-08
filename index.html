@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        background: linear-gradient(25deg, #0e57c5, #a5df);
+      }
+      div.main {
+        min-height: 100vh;
+        min-width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      div.fingahs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      }
+      @keyframes middle-finger-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes fadeInFromNone {
+        0% {
+          opacity: 0.2;
+        }
+
+        1% {
+          opacity: 0.5;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+      #h3-fadah {
+        animation: fadeInFromNone infinite 1s linear;
+      }
+      #middle-finger {
+        animation: middle-finger-spin infinite 15s linear;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>
+        STEVE GOT PWN'D
+      </h1>
+      <h3 class="h3-fadah">lil bish</h3>
+      <div class="fingahs">
+        <img id="middle-finger" src="./middle-finger.svg" />
+        <img id="middle-finger" src="./middle-finger.svg" />
+        <img id="middle-finger" src="./middle-finger.svg" />
+        <img id="middle-finger" src="./middle-finger.svg" />
+        <img id="middle-finger" src="./middle-finger.svg" />
+      </div>
+    </div>
+  </body>
+</html>
